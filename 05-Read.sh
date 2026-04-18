@@ -2,6 +2,6 @@
 
 echo "Enter your pin:"
 
-read -s PIN #HERE PIN IS VARIABLE -s is used for secrecy
+read  PIN #HERE PIN IS VARIABLE -s is used for secrecy
 
 echo "Your pin number is $PIN"
