@@ -18,3 +18,4 @@ then
 else
   echo "Installing Mysql is failure"
   exit 1
+fi
