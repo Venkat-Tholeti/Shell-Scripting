@@ -28,8 +28,8 @@ dnf list installed mysql
 if [ $? -ne 0 ]
 then
   echo "Mysql is not installed, Installation will Proceed"
-  dnf insatll mysql -y
-  #This is insatll status after it is being installed
+  dnf install mysql -y
+  #This is install status after it is being installed
   VALIDATE $? "MYSQL" #here $1 = $? (1st argument) $2 = MYSQL (2nd Argument) 
 else
    echo "MYSQL is already installed , Nothing to do!"
@@ -41,8 +41,8 @@ if [ $? -ne 0 ]
 then
   echo "python3 is not installed, Installation will Proceed"
   #If  not installed proceed with installation
-  dnf insatll python3 -y
-  #This is insatll status after it is being installed
+  dnf install python3 -y
+  #This is install status after it is being installed
   VALIDATE $? "Python3" #here $1 = $? (1st argument) $2 = Python3 (2nd Argument)
  
 else
@@ -56,8 +56,8 @@ if [ $? -ne 0 ]
 then
   echo "Nginx is not installed, Installation will Proceed"
   #If  not installed proceed with installation
-  dnf insatll nginx -y
-   #This is insatll status after it is being installed
+  dnf install nginx -y
+   #This is install status after it is being installed
   VALIDATE $? "Nginx" #here $1 = $? (1st argument) $2 = Nginx (2nd Argument)
 
 else

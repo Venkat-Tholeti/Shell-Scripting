@@ -16,8 +16,8 @@ if [ $? -ne 0 ]
 then
   echo "Mysql is not installed, Installation will Proceed"
   #If  not installed proceed with installation
-  dnf insatll mysql -y
-  #This is insatll status after it is being installed
+  dnf install mysql -y
+  #This is install status after it is being installed
   if [$? -eq 0 ] 
   then
     echo "Installation of Mysql is success"
