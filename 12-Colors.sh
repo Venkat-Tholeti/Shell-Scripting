@@ -70,3 +70,4 @@ then
 
 else
    echo -e "$N Nginx is already installed , Nothing to do! $N"
+fi
