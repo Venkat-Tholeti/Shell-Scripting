@@ -43,30 +43,30 @@ else
    echo -e "$N MYSQL is already installed , Nothing to do! $N"
 
 
-   dnf list installed python3
-#This will check if already installed or not, if not it will install
-if [ $? -ne 0 ]
-then
-  echo -e "$Y python3 is not installed, Installation will Proceed $N"
-  #If  not installed proceed with installation
-  dnf insatll python3 -y
-  #This is insatll status after it is being installed
-  VALIDATE $? "Python3" #here $1 = $? (1st argument) $2 = Python3 (2nd Argument)
+#    dnf list installed python3
+# #This will check if already installed or not, if not it will install
+# if [ $? -ne 0 ]
+# then
+#   echo -e "$Y python3 is not installed, Installation will Proceed $N"
+#   #If  not installed proceed with installation
+#   dnf insatll python3 -y
+#   #This is insatll status after it is being installed
+#   VALIDATE $? "Python3" #here $1 = $? (1st argument) $2 = Python3 (2nd Argument)
  
-else
-   echo -e "$N Python3 is already installed , Nothing to do! $N"
+# else
+#    echo -e "$N Python3 is already installed , Nothing to do! $N"
 
 
 
-   dnf list installed nginx
-#This will check if already installed or not, if not it will install
-if [ $? -ne 0 ]
-then
-  echo -e "$Y Nginx is not installed, Installation will Proceed $N"
-  #If  not installed proceed with installation
-  dnf insatll nginx -y
-   #This is insatll status after it is being installed
-  VALIDATE $? "Nginx" #here $1 = $? (1st argument) $2 = Nginx (2nd Argument)
+#    dnf list installed nginx
+# #This will check if already installed or not, if not it will install
+# if [ $? -ne 0 ]
+# then
+#   echo -e "$Y Nginx is not installed, Installation will Proceed $N"
+#   #If  not installed proceed with installation
+#   dnf insatll nginx -y
+#    #This is insatll status after it is being installed
+#   VALIDATE $? "Nginx" #here $1 = $? (1st argument) $2 = Nginx (2nd Argument)
 
-else
-   echo -e "$N Nginx is already installed , Nothing to do! $N"
+# else
+#    echo -e "$N Nginx is already installed , Nothing to do! $N"
