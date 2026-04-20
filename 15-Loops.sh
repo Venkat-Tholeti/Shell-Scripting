@@ -39,6 +39,7 @@ VALIDATE(){
 }
 
 for package in ${PACKAGES[@]}
+#for package in $@ # if we send packages Via arguments
 do 
   dnf list installed $package
 #This will check if already installed or not, if not it will install
