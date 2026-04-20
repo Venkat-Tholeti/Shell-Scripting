@@ -15,7 +15,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
 
-echo "$G Script Started Executing At $(date) $N" &>>$LOG_FILE
+echo "$G Script Started Executing At $(date) $N"
 
 if [ $USERID -ne 0 ]
 then  
