@@ -32,7 +32,7 @@ then
   VALIDATE $? "MYSQL" #here $1 = $? (1st argument) $2 = MYSQL (2nd Argument) 
 else
    echo "MYSQL is already installed , Nothing to do!"
-
+fi
 
 dnf list installed python3
 #This will check if already installed or not, if not it will install
@@ -46,7 +46,7 @@ then
  
 else
    echo "Python3 is already installed , Nothing to do!"
-
+fi
 
 
 dnf list installed nginx
