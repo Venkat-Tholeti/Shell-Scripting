@@ -20,7 +20,7 @@ fi
 
 #FUNCTION FOR REPEATED CODE
 VALIDATE(){
-    if [$1 -eq 0 ] # We can pass arguments to function also , Here $1 is 1st argument ($?) of VALIDATE in Installed space below
+    if [ $1 -eq 0 ] # We can pass arguments to function also , Here $1 is 1st argument ($?) of VALIDATE in Installed space below
   then
     echo -e   "$G Installation of $2 is success $N" # $2 is Software mentioned as below in VALIDATE function in INSTALLED SPACE BELOW
   else
