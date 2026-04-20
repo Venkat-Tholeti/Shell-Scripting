@@ -4,6 +4,7 @@ echo -e  "\e[31m Arey nenu Red ni Ra"
 echo -e  "\e[32m Arey nenu Green ni Ra \e[0m"
 
 USERID=$(id -u)
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
