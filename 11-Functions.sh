@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#VARIABLES
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
