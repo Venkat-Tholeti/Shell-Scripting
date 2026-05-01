@@ -23,7 +23,7 @@ find $SOURCE_DIRECTORY -type f -mtime +$DAYS | tar -czf $DESTINATION_DIRECTORY/b
 
 echo "Zipping  Completed Successfully"
 
-echo "files archived are"
+echo "Below files are archived"
 tar -tzf $DESTINATION_DIRECTORY/backup_$DATE.tar.gz | tee
 # To check files are there in tar.gz
 
