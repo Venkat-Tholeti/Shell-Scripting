@@ -23,6 +23,10 @@ find $SOURCE_DIRECTORY -type f -mtime +$DAYS | tar -czf $DESTINATION_DIRECTORY/b
 
 echo "Zipping  Completed Successfully"
 
+tar -tzf $DESTINATION_DIRECTORY/backup_$DATE.tar.gz | tee
+# To check files are there in tar.gz
+
+
 #HERE -T - means it will take input from find
 
 # to check files are there in tar.gz
